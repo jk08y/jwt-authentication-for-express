@@ -1,0 +1,37 @@
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+  "email": "priema@gmail.com",
+  "password": "123"
+}
+
+###
+POST http://localhost:8000/auth/refresh-token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoiN2JjMjM4M2QtMjA4NS00MWRkLWEwYjgtZjZjYzQyYTAyOTE3IiwibmFtZSI6IndlaSIsImVtYWlsIjoid2Vpd2VpQGdtYWlsLmNvbSJ9LCJpYXQiOjE2OTg1NjUxMjEsImV4cCI6MTcwMTE1NzEyMSwidHlwZSI6InJlZnJlc2gifQ.6jUwJehM-JjpLKoN3HRCIINXzdwqH2Cac2hdipJyi4s"
+}
+
+###
+POST http://localhost:8000/auth/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoiMWM3YTFkMDUtMzViOC00M2I5LWIwYTMtMzUxMTU0ODNjZjIxIiwibmFtZSI6InByaWVtYSIsImVtYWlsIjoicHJpZW1hQGdtYWlsLmNvbSJ9LCJpYXQiOjE2OTg1NjgzMTUsImV4cCI6MTcwMTE2MDMxNSwidHlwZSI6InJlZnJlc2gifQ.vyGBqqO0jZq_O9X6XyOpyMN6GA00z_HILP3VeX7UzYQ"
+}
+
+###
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+  "name": "priema",
+  "email": "priema@gmail.com",
+  "password": "123"
+}
+
+###
+GET http://localhost:8000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoiMWM3YTFkMDUtMzViOC00M2I5LWIwYTMtMzUxMTU0ODNjZjIxIiwibmFtZSI6InByaWVtYSIsImVtYWlsIjoicHJpZW1hQGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIn0sImlhdCI6MTY5ODU4NzAyNSwiZXhwIjoxNjk4NTg3MzI1LCJ0eXBlIjoiYWNjZXNzIn0.nKyxGJuQhEAADHXKHx0QeObDmqkKYszQOFJjq3zMvaI

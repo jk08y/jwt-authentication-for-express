@@ -1,5 +1,4 @@
 import { getUsers } from '../services/user.service.js';
-
 export const getUsersController = async (req, res) => {
   try {
     const users = await getUsers();
